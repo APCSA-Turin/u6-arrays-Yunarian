@@ -1,34 +1,28 @@
 public class ArrayManipulatorRunner {
     public static void main(String[] args) {
-        int[] nums1 = {5, 8, 9, 10, 4};
-        int numStr1 = 5;
-        ArrayManipulator manipulator = new ArrayManipulator(nums1, numStr1);
-        System.out.println("------------");
-        System.out.println(manipulator.getNumsMiddleIndex());
-        System.out.println(manipulator.getNumsAverage());
-        System.out.println(manipulator.sameLengths());
-        System.out.println(manipulator.getNumAt(3));
-        System.out.println(manipulator.getWordAt(3));
-        System.out.println(manipulator.updateWordsListAt(3, "hello"));
-        System.out.println(manipulator.getWordAt(3));
-        System.out.println(manipulator.howLongLastWord());
-        System.out.println(manipulator.updateWordsListAt(4, "updated"));
-        System.out.println(manipulator.howLongLastWord());
-        
-        
-        
-        
-        int[] nums2 = {2, 5, 7, 9};
-        int numStr2 = 6;
-        System.out.println("------------");
-        manipulator = new ArrayManipulator(nums2, numStr2);
-        System.out.println(manipulator.getNumsMiddleIndex());
-        System.out.println(manipulator.getNumsAverage());
-        System.out.println(manipulator.sameLengths());
-        System.out.println(manipulator.getNumAt(3));
-        System.out.println(manipulator.updateWordsListAt(6, "not valid"));
-        System.out.println(manipulator.howLongLastWord());
-        System.out.println(manipulator.updateWordsListAt(5, "valid"));
-        System.out.println(manipulator.howLongLastWord()); 
+        int[] even = {1, 2, 3, 4, 5, 6};
+        ArrayManipulator.reverseInPlace(even);
+        for (int i = 0; i < even.length; i++) {
+            System.out.print(even[i] + " ");
+        }
+        System.out.println();
+        int[] odd = {1, 2, 3, 4, 5, 6, 7};
+        ArrayManipulator.reverseInPlace(odd);
+        for (int i = 0; i < odd.length; i++) {
+            System.out.print(odd[i] + " ");
+        }
+        System.out.println();
+        int[] even2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+        ArrayManipulator.reverseInPlace(even2);
+        for (int i = 0; i < even2.length; i++) {
+            System.out.print(even2[i] + " ");
+        }
+        System.out.println();
+        int[] odd2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+        ArrayManipulator.reverseInPlace(odd2);
+        for (int i = 0; i < odd2.length; i++) {
+            System.out.print(odd2[i] + " ");
+        }
+        System.out.println();
     }
 }
